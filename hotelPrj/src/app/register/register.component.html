@@ -1,0 +1,39 @@
+<div class="jumbotron jumbotron-fluid">
+    
+    <div class="container">
+        <div>
+            <h1>{{message}}</h1>
+        </div>
+        <h1 class="display-4">Register </h1>
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>CustomerName</label>
+                <input type="text" class="form-control" id="customerName" name="customerName" [(ngModel)]="cus.customerName" >
+              </div>
+              
+            </div>
+            <div class="form-group">
+              <label>Age</label>
+              <input type="text" class="form-control" id="age" name="age"  placeholder="age" [(ngModel)]="cus.age" >
+            </div>
+            <div class="form-group">
+              <label>City</label>
+              <input type="text"  class="form-control" id="city" name="city" placeholder="city" [(ngModel)]="cus.city" >
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>PhoneNum</label>
+                <input type="text"  class="form-control" id="phonenum" name="phonenum" [(ngModel)]="cus.phonenum" >
+              </div>
+              <div class="form-group col-md-6">
+                <label>NumberOfRooms</label>
+                <input type="text"  name="numberofrooms"  class="form-control" id="numberofrooms" [(ngModel)]="cus.numberofrooms" >
+              </div>
+              </div>
+               <button type="submit" (click)="registerNow()" name="submit" value="register" class="btn btn-primary">Submit</button>
+          </form>
+      
+    </div>
+  </div>
+

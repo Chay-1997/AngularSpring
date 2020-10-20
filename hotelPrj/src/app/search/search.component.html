@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-sm-12 col-xs-12">
+            <input type="text" placeholder="Enter customername" class="form-control" name="customername" [(ngModel)]="customername"/>
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 col-xs-12">
+        <button type="button" class="btn btn-info" (click)="getCustomerByName()">
+            Search
+        </button>
+    </div>
+    <h2>Result</h2>
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+       <table class="table">
+           <thead>
+               <tr>
+                   <td>CustomerName</td>
+                   <td>Age</td>
+                   <td>City</td>
+                   <td>PhoneNum</td>
+                   <td>NumberOfRooms</td>
+               </tr>
+           </thead>
+        <tbody>
+        <td>{{cust.customerName}}</td>
+            <td>{{cust.age}}</td>
+            <td>{{cust.city}}</td>
+            <td>{{cust.phonenum}}</td>
+            <td>{{cust.numberofrooms}}</td>
+        </tbody>
+
+       </table> 
+    </div>
+</div>
+

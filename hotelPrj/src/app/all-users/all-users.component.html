@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+<table class="table table-striped">
+    <thead>
+        <tr >
+            <td>CustomerName</td>
+            <td>Age</td>
+            <td>City</td>
+            <td>Phonenum</td>
+            <td>Numberofrooms</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cu of cust">
+            <td>{{cu.customerName}}</td>
+            <td>{{cu.age}}</td>
+            <td>{{cu.city}}</td>
+            <td>{{cu.phonenum}}</td>
+            <td>{{cu.numberofrooms}}</td>
+           
+            <td><button class="btn btn-danger" (click)="removeUser(cu.customerName)">Delete</button></td> 
+           
+
+        </tr>
+    </tbody>
+</table> 
+
+    </div> 
+</div>
